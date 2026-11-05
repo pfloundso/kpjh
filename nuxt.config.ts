@@ -37,6 +37,9 @@ export default defineNuxtConfig({
         jwtSecret: '',
         userPw: '',
         groupleaderPw: '',
+        public: {
+            cartoApiKey: ''
+        },
     },
     css: ['@/assets/scss/styles.scss', 'leaflet/dist/leaflet.css'],
     // devServer: {

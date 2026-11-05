@@ -17,7 +17,7 @@
         @update:center="mapChangeLocation"
     >
         <l-tile-layer
-            url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+            :url="`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${useRuntimeConfig().public.cartoApiKey}`"
         />
         <l-marker
             v-if="location"
