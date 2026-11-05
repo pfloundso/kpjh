@@ -1,4 +1,4 @@
-import { version as version$1, toRef, isRef, getCurrentInstance, inject, unref, computed, reactive, defineComponent, ref, h, watchEffect, watch, onServerPrefetch, resolveComponent, mergeProps, useSSRContext, createApp, provide, onErrorCaptured, createVNode, resolveDynamicComponent, shallowRef, isReadonly, defineAsyncComponent, nextTick, Suspense, Transition, withCtx, createTextVNode, withModifiers, openBlock, createBlock, withDirectives, Fragment as Fragment$1, renderList, toDisplayString, vModelSelect, vModelText } from 'vue';
+import { version as version$1, toRef, isRef, getCurrentInstance, inject, ref, watchEffect, watch, onServerPrefetch, defineComponent, computed, h, resolveComponent, mergeProps, useSSRContext, createApp, reactive, unref, provide, onErrorCaptured, createVNode, resolveDynamicComponent, shallowRef, isReadonly, defineAsyncComponent, nextTick, Suspense, Transition, withCtx, createTextVNode, withModifiers, openBlock, createBlock, withDirectives, Fragment as Fragment$1, renderList, toDisplayString, vModelSelect, vModelText } from 'vue';
 import { $fetch } from 'ofetch';
 import { createHooks } from 'hookable';
 import { getContext, executeAsync } from 'unctx';
@@ -625,7 +625,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-8695ee02.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-c0f0f85b.mjs').then((m) => m.default || m)
   },
   {
     name: "fotos",
@@ -641,7 +641,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/gruppen-accd0924.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/gruppen-05044813.mjs').then((m) => m.default || m)
   },
   {
     name: "impressum",
@@ -8143,9 +8143,9 @@ const _sfc_main$6 = {
 };
 function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   if ($props.show) {
-    _push(`<div${ssrRenderAttrs(mergeProps({ class: "ModalWrapper" }, _attrs))} data-v-158c8507><div class="Modal" data-v-158c8507><svg viewBox="0 0 45 45" style="${ssrRenderStyle({ stroke: $props.buttonColor })}" class="closeButton" xmlns="http://www.w3.org/2000/svg" data-v-158c8507><path d="M11.3137 10.9602L33.5876 33.234" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-v-158c8507></path><path d="M10.9602 33.234L33.2341 10.9602" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-v-158c8507></path></svg>`);
+    _push(`<div${ssrRenderAttrs(mergeProps({ class: "ModalWrapper" }, _attrs))} data-v-e8b16bdf><div class="Modal" data-v-e8b16bdf><svg viewBox="0 0 45 45" style="${ssrRenderStyle({ stroke: $props.buttonColor })}" class="closeButton" xmlns="http://www.w3.org/2000/svg" data-v-e8b16bdf><path d="M11.3137 10.9602L33.5876 33.234" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-v-e8b16bdf></path><path d="M10.9602 33.234L33.2341 10.9602" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-v-e8b16bdf></path></svg>`);
     ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-    _push(`</div><div class="Backdrop" data-v-158c8507></div></div>`);
+    _push(`</div><div class="Backdrop" data-v-e8b16bdf></div></div>`);
   } else {
     _push(`<!---->`);
   }
@@ -8156,7 +8156,7 @@ _sfc_main$6.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/helpers/Modal.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$4], ["__scopeId", "data-v-158c8507"]]);
+const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$4], ["__scopeId", "data-v-e8b16bdf"]]);
 const USER_TYPES = Object.freeze({
   user: "user",
   groupLeader: "groupLeader"
@@ -8282,7 +8282,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Login.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-15416ac2"]]);
+const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-15416ac2"]]);
 const _imports_0$1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA6CAYAAAAOeSEWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAhASURBVHgB7Vt9jFxVFT/nvvdmP6Z8LCxrsnbbZY1Nq0CaYrWVJlalYv8AVoNpNE38IGKoqaBJJVQT/0FjYlQwJhj0D4MkJm2DDWmMwYpBRQOysZYYSKBsabstLQi729mZ93kPv/uWWWan7wvYeUMov2Y6771z7rn3nHvuveecN0tUMkSk3428H1MXoKhkBKRvIWUNUBdgU9kQ2WAxXURdAFOHYdw2oGC1kBrDbUW03ozvGXxOaEWP95FzmJnrVAKWXNk9sscaD8avIouu1szboO7Hmbh/oUPmo0JyPwvv0KSfAe0kCx0T0RORFf2jn/tPUIewZMpiBj/s63A7sVwLsesocz/gSbRYgQtLkzwiId2pHX2RQ9anIi0XeMr5/gDzNL2TAAXZDcPrfR085ulAUj4NX8Lf4XMzjPGiedYQ70uu9iebPK4OTnsS3GHkNaQx6kXeD/0ovNcYkN4JCCTY7En4XIaS+PiHwbcRg1ZQ7kjzOf5dC6U2ezqcaeP/tyfeVUY+2vT4Et3uS/AzF/zULWAW7spWErMVhfdgwBfH/DhXW2n4t8k8dyX6dns7zH4tkOiuZl9TMtUPr/iKGwU/rYu8n8pCQ2QFrP9kjqL/90JvW7NNKOHWdh5gw4LMyP9tkpxAwkfBt7zJh+vLMNM7oPQu6jR88ddjbU1lKQqX+9e0uGNvGAfrT4cvJCi7tslzRs4sA8+xlGVwFP2ubR0H3PwK8D8Aw49SJwA3+io6DzJnVIIDx+V436KB6XBfoouLfKCVD+pvzpD9as2bX8ctCn8Im+IEDLHT7Ae0VMD6+W7u+pTg6brUF60nDGIsjR9rb6S9Hzx/KGOjm4S8C1v50d8IDLwH9AdBu5TeLrByfpKnKGZvclZmz+nM1d6BtDYmqmrnx7MrQaunLpHIv6+9zXGRPhjiAYzhuRnX/SC9VZizroiiSWvHDYLrMtqF5jxN7FOHezPaRWh3XVI7V/wdoL8Mt/4IvVm4Et6QpyiOiGkIX5fYXgd/y2hrpjYxAcHz0RzjPts8ztqBnfoW0F9yxV1FRQFhQxjsi7nKSvT1lPYb8trWpPa+tP7R997sfv2709p6YThugpe0nfqcnSwkvRM+ljqY1xX6TYWtXyfRsHN/h3JQpepMqmymX1Jm33wrZi9xffbY9n4kFX9XEu7DGHuz5MQ7HNzTz5mZQxC0LHkgcrGXd0TNr1krXRlROK8PZcnA7B9Maz8nc8NoP+FFwe52mlp84+xE+uVQKvhkhe1xpGm1JCqiIbOB5BUEPLSPUntg1qLpjxntTar26bR4ucrVkxC+C3J+MCcy3EpbUFZM3CnyTcqASPhzk4+m0S22tlI+JI9Bizybx6OEdqft6n3sPMJMf7Z1sKjWtaCsT/q21iT7XPCRWTX7K8oCyzrKR5THYFn0nzweWOyTSC8/kUa3yboTbnLjpEwurN1Y2XkL6espSzjLjiEeqqXSccDjKzf/xCDn8ngccv6LLy+Pj5VsT6UxP4Wv2jAN39R8FisbUrgJo1hN6QP8ay87D1MGIOMaKlStlNwKBAaKLuV4Ab6bkWysTKer/aytjc375uA+Q9lC76EcwDfXUjG8XIiL+elCbNr+QiqN9O8164817+fdmHhbWgOY+ESFrIcot1O+ggqB/SJcovlkET5WfFsaza/7R7APrcQSi+MGhWjjctykBtFwqHvn3SpncKxXUgEoHC1UCLrQzGKzWI7xJy7BarV6CgwHXQrXxH1L5G/IFKbsB6kAFPGyInyoG58uwqcUPUoFgUDoa6lEoQAnd2wMGJq3pvPRsR7mZygHsOygcGE3LlQX1uScpaJg+mwG8RRcfdRc2VB2MH7E/JjW0T+VsvrhtJ9DPXcYCzreEU1gbVM4Av+/MCRUebFScBo+30P0PNoFPvlDJKqXCgAGfKUI3yk6OjVMy6kgrjQZU1LAo5Q6A13WU6ws0SAYb+9RzsKOi/jyR7b0PI7QsYY4dD/p4Ax22ydhobqKpIcsOJkOt/hMY6gWoLBPh9vK7Tgj+RjFoaNcvrh7cc3/jUZjVPU6m2DAPhjZBDPCynm46UnD/vAqyghc2+FGvjn6jrY/x+CqTCoOdmzEupugxKId0sSXqAnvwgzfCvp20FOPi3q9PqJ67G9h0PAOegJGucOl2qEBHojPU5yDK3DWfV6x+h6MN6hIrUbl8A/QbYLJOoyZfsHYDujDWf1lBPpjMP4pUfpPLduiGZ8JRsy+kGgC27JHEgcovEYoqpjL1Ncfrxeyeou8dDIBt6WDm3qtyi8y5KEUGprSyrhi2uKwczCDdy1478flpZpldy85e5vjmJbpgQr1r3KIqzgyb4A9biSTvzIdgLmntI6Po5dER4NwYYiib0DJWkXZ5b45NEUzzNwrraXUNJh0c1a81QVkOpD5BF6X3I3rSjt9zvevRp3qqbQKR8dglDXlHJRCl/QdjqlPmxlPo8/I2yjGvVXE5U8UzpJKqWWg1J8ZKOozmZHqK5D5dKb/UjsLmvnyu19ZRCMm8DDHSG4C3wmUqqwdUEDzNarcxKITKFVZ5JaX4CyMsgpunUS5v4OybUu6M6kxSv/RVzdRtrIWdRHdUDakLqEbbnx+KIs9+E1kqEuPkmc2Op+U7S5KVtY6f3Zj1IPec+OyUKqyFp9Hu7EmNkWvRQqbH6yYYhyVgFL/RkDFBXa1qNLvS3Qf1nIDl1+kDqPcNausOWQ9l509e3bI3P4vrgbKNUriF8cdR8f/IKIV5tUh6sHm7dwREf0X5LVbUOS9YI6s9Zcwz1CHUW64yHza8xsb8T1hsbUG1fp9ePf70TIUNXgN8CesHHE+x7sAAAAASUVORK5CYII=";
 const _sfc_main$4 = {
   data() {
@@ -8302,7 +8302,7 @@ const _sfc_main$4 = {
 };
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLink = __nuxt_component_0$3;
-  const _component_Login = __nuxt_component_1$1;
+  const _component_Login = __nuxt_component_1$2;
   _push(`<div${ssrRenderAttrs(mergeProps({
     class: ["nav", { fixed: $data.fixedBar, open: $data.openMenu }]
   }, _attrs))} data-v-50fb9325><div class="wrapper" data-v-50fb9325>`);
@@ -8389,7 +8389,7 @@ _sfc_main$4.setup = (props, ctx) => {
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
 const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-50fb9325"]]);
-const __nuxt_component_1 = /* @__PURE__ */ defineComponent({
+const __nuxt_component_1$1 = /* @__PURE__ */ defineComponent({
   name: "NuxtLoadingIndicator",
   props: {
     throttle: {
@@ -8505,7 +8505,7 @@ const Fragment = /* @__PURE__ */ defineComponent({
 const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
-const __nuxt_component_2$1 = /* @__PURE__ */ defineComponent({
+const __nuxt_component_2 = /* @__PURE__ */ defineComponent({
   name: "NuxtPage",
   inheritAttrs: false,
   props: {
@@ -8692,7 +8692,7 @@ const imgProps = {
   ...baseImageProps,
   placeholder: { type: [Boolean, String, Number, Array], default: void 0 }
 };
-const __nuxt_component_2 = /* @__PURE__ */ defineComponent({
+const __nuxt_component_1 = /* @__PURE__ */ defineComponent({
   name: "NuxtImg",
   props: imgProps,
   emits: ["load"],
@@ -8793,7 +8793,7 @@ const _sfc_main$2 = {
 };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_ImageSlider = __nuxt_component_0;
-  const _component_nuxt_img = __nuxt_component_2;
+  const _component_nuxt_img = __nuxt_component_1;
   const _component_NuxtLink = __nuxt_component_0$3;
   _push(`<div${ssrRenderAttrs(mergeProps({ class: "container-fluid footer" }, _attrs))} data-v-fa74ba7f><div class="sponsors" data-v-fa74ba7f><!--[-->`);
   ssrRenderList($setup.sponsors, (sponsor) => {
@@ -8900,8 +8900,8 @@ const _sfc_main$1 = {
     cookie.value = cookie.value || contentfulToken;
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Navbar = __nuxt_component_0$1;
-      const _component_NuxtLoadingIndicator = __nuxt_component_1;
-      const _component_NuxtPage = __nuxt_component_2$1;
+      const _component_NuxtLoadingIndicator = __nuxt_component_1$1;
+      const _component_NuxtPage = __nuxt_component_2;
       const _component_Footer = __nuxt_component_3;
       _push(`<div${ssrRenderAttrs(_attrs)}>`);
       _push(ssrRenderComponent(_component_Navbar, null, null, _parent));
@@ -8923,7 +8923,7 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/error-component-0c879da0.mjs').then((r) => r.default || r));
+    const ErrorComponent = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/error-component-91c6baa2.mjs').then((r) => r.default || r));
     const IslandRenderer = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/island-renderer-acef7e05.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
@@ -8989,5 +8989,5 @@ const plugins = normalizePlugins(_plugins);
 }
 const entry$1 = (ctx) => entry(ctx);
 
-export { _export_sfc as _, useFetch as a, __nuxt_component_0$2 as b, createError as c, useRoute as d, entry$1 as default, useAsyncQuery as e, __nuxt_component_0$3 as f, __nuxt_component_2 as g, useHead as h, useState as u };
+export { _export_sfc as _, useState as a, __nuxt_component_0$2 as b, createError as c, useRoute as d, entry$1 as default, useAsyncQuery as e, __nuxt_component_0$3 as f, useHead as g, useRuntimeConfig as u };
 //# sourceMappingURL=server.mjs.map

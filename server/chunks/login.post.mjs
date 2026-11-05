@@ -1,4 +1,4 @@
-import { defineEventHandler, readBody, setCookie, createError } from 'h3';
+globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, readBody, setCookie, createError } from 'h3';
 import jwt from 'jsonwebtoken';
 import { u as useRuntimeConfig } from './nitro/node-server.mjs';
 import 'node-fetch-native/polyfill';
@@ -29,7 +29,13 @@ const login_post = defineEventHandler(async (event) => {
   if (Object.prototype.hasOwnProperty.call(userPws, userType)) {
     if (password === userPws[userType]) {
       const token = jwt.sign(userType, useRuntimeConfig().jwtSecret);
-      setCookie(event, "token", token);
+      setCookie(event, "token", token, {
+        httpOnly: true,
+        secure: !globalThis._importMeta_.dev,
+        sameSite: "lax",
+        path: "/",
+        maxAge: 60 * 60 * 24 * 7
+      });
       return {
         statusCode: 200,
         statusMessage: "success"
