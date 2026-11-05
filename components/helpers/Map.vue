@@ -1,3 +1,4 @@
+
 <template>
     <l-map
         v-if="showMap"
@@ -17,7 +18,7 @@
         @update:center="mapChangeLocation"
     >
         <l-tile-layer
-            :url="`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${useRuntimeConfig().public.cartoApiKey}`"
+            :url="tileUrl"
         />
         <l-marker
             v-if="location"
@@ -54,6 +55,13 @@ export default {
             timer: undefined,
             center: this.location,
         }
+    },
+    computed: {
+        tileUrl() {
+            const key = useRuntimeConfig().public.cartoApiKey
+
+            return `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${encodeURIComponent(key)}`
+        },
     },
     async mounted() {
         await nextTick()
