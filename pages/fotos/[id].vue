@@ -27,6 +27,7 @@
                     v-if="album.location"
                     :location="[album.location.lat, album.location.lon]"
                 />
+                console.log
             </div>
             <div
                 v-if="useState('loggedIn').value"

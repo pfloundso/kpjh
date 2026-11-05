@@ -1,11 +1,16 @@
+
 <template>
     <div class="pictures">
         <div
             v-if="images.length > 1"
             class="prevButton"
+            role="button"
+            tabindex="0"
+            aria-label="Vorheriges Bild"
             @click="prevImage"
+            @keydown.enter.prevent="prevImage"
         >
-            <svg 
+            <svg
                 viewBox="0 0 28 18"
                 fill="white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -15,35 +20,43 @@
                 />
             </svg>
         </div>
+
         <Carousel
-            ref="myCarousel"
+            v-model="currentImg"
             wrap-around
-            :style="{ width: width, height: 'height' }"
+            :transition="transition"
+            :style="{ width, height }"
         >
             <Slide
                 v-for="(image, index) in images"
                 :key="index"
-            >   
-                <nuxt-img
+            >
+                <img
                     :src="image"
                     class="slideImg"
-                    :style="{ width: width, height: height }"
+                    :style="{ width, height }"
+                    alt="Foto"
+                    loading="lazy"
                 />
             </Slide>
         </Carousel>
+
         <div
+            v-if="images.length > 1"
             class="nextButton"
+            role="button"
+            tabindex="0"
+            aria-label="Nächstes Bild"
             @click="nextImage"
+            @keydown.enter.prevent="nextImage"
         >
             <svg
-                v-if="images.length > 1"
                 viewBox="0 0 28 18"
                 fill="white"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <path
-                    d="M15.9639 16.2952C14.8821 17.4034 13.1179 17.4034 12.0361 16.2952L0.801466 4.78587C-0.267156 3.69112 -0.267156 1.92596 0.801466 0.831215C1.88326 -0.277029 3.64744 -0.277029 4.72924 0.831215L14 10.5L23.2708 0.831214C24.3526 -0.27703 26.1167 -0.27703 27.1985 0.831214C28.2672 1.92596 28.2672 3.69112 27.1985 4.78587L15.9639 16.2952Z"
-                />
+                    d="M15.9639 16.2952C14.8821 17.4034 13.1179 17.4034 12.0361 16.2952L0.801466 4.78587C-0.267156 3.69112 -0.267156 1.92596 0.801466 0.831215C1.88326 -0.277029 3.64744 -0.277029 4.72924 0.831215L14 10.5L23.2708 0.831214C24.3526 -0.27703 26.1167 -0.27703 27.1985 0.831214C28.2672 1.92596 28.2672 3.69112 27.1985 4.78587L15.9639 16.2952Z"                />
             </svg>
         </div>
     </div>
@@ -58,6 +71,7 @@ export default {
         Carousel,
         Slide,
     },
+
     props: {
         images: {
             type: Array,
@@ -81,31 +95,62 @@ export default {
             default: 0,
         },
     },
+
     emits: ['prevImage', 'nextImage'],
+
     data() {
         return {
             currentImg: this.firstImageId,
         }
     },
-    mounted() {
-        if (this.firstImageId) {
-            this.$refs.myCarousel.slideTo(this.firstImageId)
-        }
+
+    watch: {
+        // Keep the carousel synchronized with its parent
+        firstImageId(newIndex) {
+            if (newIndex !== this.currentImg) {
+                this.currentImg = newIndex
+            }
+        },
+
+        // Also handle navigation by swiping
+        currentImg(newIndex, oldIndex) {
+            if (newIndex === oldIndex || !this.images.length) {
+                return
+            }
+
+            const count = this.images.length
+            const normalizedIndex =
+                ((newIndex % count) + count) % count
+
+            if (newIndex > oldIndex) {
+                this.$emit('nextImage', normalizedIndex)
+            } else {
+                this.$emit('prevImage', normalizedIndex)
+            }
+        },
     },
+
     methods: {
         nextImage() {
-            this.$refs.myCarousel.next()
-            this.currentImg++
-            this.$emit('nextImage', this.currentImg)
+            if (this.images.length < 2) return
+
+            this.currentImg =
+                (this.currentImg + 1) % this.images.length
         },
+
         prevImage() {
-            this.$refs.myCarousel.prev()
-            this.currentImg--
-            this.$emit('prevImage', this.currentImg)
+            if (this.images.length < 2) return
+
+            this.currentImg =
+                (
+                    this.currentImg - 1 +
+                    this.images.length
+                ) % this.images.length
         },
     },
 }
 </script>
+
 
 <style lang="scss" scoped>
 img {
