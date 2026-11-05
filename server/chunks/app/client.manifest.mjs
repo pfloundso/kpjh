@@ -14,13 +14,13 @@ const client_manifest = {
     "file": "Downloads.da5d309f.css",
     "src": "Downloads.css"
   },
-  "_DefaultView.45846933.js": {
+  "_DefaultView.ece98fd0.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "DefaultView.df3464d6.css"
     ],
-    "file": "DefaultView.45846933.js",
+    "file": "DefaultView.ece98fd0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -29,13 +29,13 @@ const client_manifest = {
     "file": "DefaultView.df3464d6.css",
     "resourceType": "style"
   },
-  "_Diashow.c348beb8.js": {
+  "_Diashow.ea927e9a.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "Diashow.ac875225.css"
     ],
-    "file": "Diashow.c348beb8.js",
+    "file": "Diashow.ea927e9a.js",
     "imports": [
       "__commonjsHelpers.87174ba5.js",
       "node_modules/nuxt/dist/app/entry.js"
@@ -45,13 +45,13 @@ const client_manifest = {
     "file": "Diashow.ac875225.css",
     "resourceType": "style"
   },
-  "_Downloads.0e7abe45.js": {
+  "_Downloads.15b483ec.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "Downloads.da5d309f.css"
     ],
-    "file": "Downloads.0e7abe45.js",
+    "file": "Downloads.15b483ec.js",
     "imports": [
       "_FileSaver.min.29897430.js",
       "node_modules/nuxt/dist/app/entry.js"
@@ -144,7 +144,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.89a1079a.js",
+    "file": "error-404.786d0978.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -164,7 +164,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.612d3bdf.js",
+    "file": "error-500.ed25e036.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -224,7 +224,7 @@ const client_manifest = {
     "dynamicImports": [
       "virtual:nuxt:/home/runner/work/kpjh/kpjh/.nuxt/error-component.mjs"
     ],
-    "file": "entry.20cd287f.js",
+    "file": "entry.6eb252e1.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -266,9 +266,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "datenschutz.5165737d.js",
+    "file": "datenschutz.ce6ae380.js",
     "imports": [
-      "_DefaultView.45846933.js",
+      "_DefaultView.ece98fd0.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -315,12 +315,12 @@ const client_manifest = {
       "node_modules/leaflet/dist/leaflet-src.esm.js",
       "node_modules/leaflet/dist/leaflet-src.esm.js"
     ],
-    "file": "_id_.b95942ec.js",
+    "file": "_id_.2375217a.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_Diashow.c348beb8.js",
+      "_Diashow.ea927e9a.js",
       "_FileSaver.min.29897430.js",
-      "_DefaultView.45846933.js",
+      "_DefaultView.ece98fd0.js",
       "__commonjsHelpers.87174ba5.js"
     ],
     "isDynamicEntry": true,
@@ -339,10 +339,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "index.2182f04c.js",
+    "file": "index.827de7f9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DefaultView.45846933.js"
+      "_DefaultView.ece98fd0.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/fotos/index.vue"
@@ -363,11 +363,11 @@ const client_manifest = {
       "imageError.ef762fd4.svg"
     ],
     "css": [],
-    "file": "gruppen.674a19ea.js",
+    "file": "gruppen.918cce15.js",
     "imports": [
-      "_Diashow.c348beb8.js",
+      "_Diashow.ea927e9a.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DefaultView.45846933.js",
+      "_DefaultView.ece98fd0.js",
       "__commonjsHelpers.87174ba5.js"
     ],
     "isDynamicEntry": true,
@@ -391,9 +391,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "impressum.6cc95507.js",
+    "file": "impressum.418ad4df.js",
     "imports": [
-      "_DefaultView.45846933.js",
+      "_DefaultView.ece98fd0.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -415,11 +415,11 @@ const client_manifest = {
       "header.10c98faf.svg"
     ],
     "css": [],
-    "file": "index.f0333464.js",
+    "file": "index.7d808294.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "__commonjsHelpers.87174ba5.js",
-      "_Downloads.0e7abe45.js",
+      "_Downloads.15b483ec.js",
       "_FileSaver.min.29897430.js"
     ],
     "isDynamicEntry": true,
@@ -448,10 +448,10 @@ const client_manifest = {
     "css": [
       "kontakt.3357d86a.css"
     ],
-    "file": "kontakt.b529bb8f.js",
+    "file": "kontakt.de3972a0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DefaultView.45846933.js"
+      "_DefaultView.ece98fd0.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/kontakt.vue"
@@ -479,11 +479,11 @@ const client_manifest = {
     "css": [
       "ueberuns.3a59c6a8.css"
     ],
-    "file": "ueberuns.ffafd887.js",
+    "file": "ueberuns.74357399.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_Downloads.0e7abe45.js",
-      "_DefaultView.45846933.js",
+      "_Downloads.15b483ec.js",
+      "_DefaultView.ece98fd0.js",
       "_FileSaver.min.29897430.js",
       "__commonjsHelpers.87174ba5.js"
     ],
@@ -504,7 +504,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.91ac0f13.js",
+    "file": "error-component.0d20875f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
